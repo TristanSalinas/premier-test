@@ -1,0 +1,84 @@
+:root {
+  --blanc: #ffffff;
+  --bleu: #476fdb;
+  --gris-clair: #eeeeee;
+  --gris-fonce: #777777;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  flex-direction: column;
+  background-color: var(--bleu);
+  padding: 2rem;
+}
+.right h1 {
+  color: var(--blanc);
+}
+
+img {
+  width: 50%;
+}
+
+h1 {
+  font-weight: bold;
+  margin-inline: auto;
+}
+
+form {
+  width: min(70%, 33vw);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--bleu);
+  font-weight: bold;
+}
+fieldset {
+  border: none;
+}
+fieldset * {
+  margin-block: 0.25rem;
+}
+label {
+  display: block;
+}
+input {
+  width: 100%;
+  background-color: var(--gris-clair);
+  border: none;
+  padding-block: 0.5rem;
+}
+input ::placeholder {
+  color: var(--gris-fonce);
+}
+
+button {
+  border: none;
+  border-radius: 0.2rem;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  margin-block: 1rem;
+  margin-inline: auto;
+  background-color: var(--bleu);
+  color: var(--blanc);
+}
